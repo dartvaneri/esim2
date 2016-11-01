@@ -1,10 +1,20 @@
+*{
+	-moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+html, body{
+	font-size: 18px;
+	color: #333;
+}
 label {
 	color: blue;
 }
 
 #menu {
-	float: left;
-	width: 150px;
+	position: fixed;
+	left: 5px;
+	width: 200px;
 	background-color: gray;
 }
 #menu ul {
@@ -16,4 +26,35 @@ label {
 
 #sisalto {
 	margin-left: 170px;
+}
+#Login {
+	position: relative;
+	width: 20vw;
+	left: 30vw;
+	border: 1px solid #DDD;
+	padding: 0px 20px 0px 20px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#Login h1{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #666;
+}
+#Login input{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	color: #333;
+	border: 1px solid #DDD;
+}
+#Login input[type="submit"]{
+	background: #3366ff;
+	color: white;
+	outline: none;
+	border: 0;
 }
